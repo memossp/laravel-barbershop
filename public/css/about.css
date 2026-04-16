@@ -1,0 +1,138 @@
+:root{
+    --yellow-color:var(#E4B50D);
+    --black-color:var(#000000);
+    --light-yellow-color: #eed682; 
+}
+
+/* <!-- here start About First CONTENT -- */
+
+.main-content-barber{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding-left: 4rem;
+    overflow: hidden;
+    
+}
+
+
+.in-use{
+    height: 25rem;
+    width: 100%;
+    border: 0.2rem solid #E4B50D;
+    
+}
+
+
+
+/* <!-- here ENDS About First CONTENT --> */
+
+
+/* <!-- here start About Second CONTENT --> */
+
+
+
+.employee-content-barber{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    
+
+}
+
+.paragraph_emp{
+    background-color: rgba(255, 0, 0, 0.3);
+    padding-left: 1rem;
+    padding-top: 3rem;
+    overflow: hidden;
+    
+    width: 30rem;
+    border-radius: 25px;
+    border: 0.2rem solid #E4B50D;
+
+    
+}
+
+.portrait{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 25px; 
+    border: 0.2rem solid #E4B50D;
+}
+
+
+/* THIRD CONTENT START */
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services-right{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.services-left{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 1067px){
+
+    .wrapper{
+        padding-top: 0rem;
+    }
+
+    .main-content-barber{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+/* this is the first picture */
+    .in-use{
+        height: 25rem;
+        width: 100%;
+        border-radius: 25%;
+        border: none;
+        
+    }
+
+
+}
+
+
