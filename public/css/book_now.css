@@ -1,0 +1,121 @@
+/* Style the form container */
+
+
+.former-wrap{
+    background: url(/image/tools.jpg);
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    padding: 1em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  /* Style the form header */
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /* Style the form fields */
+  label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style error messages */
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border-color: red;
+  }
+  
+  input:invalid:focus,
+  select:invalid:focus,
+  textarea:invalid:focus {
+    outline: none;
+  }
+  
+  /* Style success messages */
+  input:valid,
+  select:valid,
+  textarea:valid {
+    border-color: green;
+  }
+  
+  input:valid:focus,
+  select:valid:focus,
+  textarea:valid:focus {
+    outline: none;
+  }
+
+  
+  /* Style radio buttons */
+input[type="checkbox"] {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+  }
+  
+  label[for="haircut"],
+  label[for="shave"],
+  label[for="beardtrim"] {
+    display: inline-block;
+    margin-top: 0.5em;
+  }
+
+  .cuts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  .cuts-col{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem 1rem 1rem;
+    
+  }

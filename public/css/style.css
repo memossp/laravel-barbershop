@@ -1,0 +1,436 @@
+
+
+/* when you call root you adoing e reference to html itself and 
+                we are making variables*/
+:root{
+    --yellow-color:var(#E4B50D);
+    --black-color:var(#000000);
+    --light-yellow-color: #eed682; 
+}
+
+/* this piece o code is to import your font family */
+font-family{
+font-family: Far From Homecoming ;
+src: url("fonts/FarFromHomecoming.otf");
+}
+
+/* with this * symbol you have make e reference to all tags in this site */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0rem;
+    font-family:  "FarFromHomecoming","Bostana", "sans-serif";
+    color: #E4B50D;
+
+    /* this shit is fixing all the problem <3 */
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    overflow-x: hidden;
+    
+
+    
+}
+/* here we give right sizes on every card on site  */
+.card img{
+    height: 33rem;
+    width: 33rem;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.wrapper{
+    background: linear-gradient(180deg, #000000 99.31%, #E4B50D 100%);
+    border: 0.2rem solid #E4B50D;
+    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.25);
+    height: fit-content;
+    width: 100%;
+    margin: 0 ;
+    overflow-x: hidden;
+    position: static;
+}
+
+/* href decorations after or before events */
+
+a:link { 
+        text-decoration: none; 
+    }
+a:visited { 
+    text-decoration:var(--black-color); 
+}
+a:hover { 
+    color: #eed682; 
+}
+a:active { 
+    text-decoration: none; 
+}
+
+/* there is Buttons styles */
+.btn-light, .btn-card1 , .btn-card2{
+    padding: 1rem 3rem;
+    gap: 0.2rem;
+    border-radius: 23rem;
+    color: #000000;
+    background: #E4B50D;
+    font-family: 'Bostana', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-decoration: none;
+    position: relative;
+}
+
+
+
+/* here is log in Buttons  */
+
+.btn-light::before{
+    content: url(/svg/user_dark.svg);
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-47%);
+    padding-left: 0.8rem;
+}
+/* Buttons ends */
+
+/* starts Header */
+
+/* header{
+   
+} */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border: 0.2rem solid #E4B50D;
+    z-index: 10;
+    top: 0px;
+    position: fixed;
+    transition:all 500ms ease-in-out;
+    width: 99.7%;
+    background-color: #000000;
+    
+    
+}
+
+
+
+nav ul{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 7rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+nav ul li a{
+    font-family: 'Bostana';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #E4B50D;
+}
+
+
+.former-wrap > .navbar.links> ul> li> a {
+    
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0.2rem solid #E4B50D;
+  }
+
+  .navbar-links{
+    width: 100%;
+    
+    background-color: #070707;
+    margin-top: -1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display: none; */
+    color: var(--light-yellow-color);
+
+  }
+
+/* Starts hero section  */
+
+
+.hero-section {
+    height: fit-content;
+    width: 100%;
+    padding: 7rem;
+  }
+
+.hero-top{
+    align-items: flex-start;
+}
+
+.hero-image{
+    height: max-content;
+    width: fit-content;
+}
+
+
+.hero-section img{
+    width: 100%;
+    height: auto;
+  }
+
+.hero-bottom{
+    align-self: top;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    font-family: 'Far From Homecoming';
+    font-style: normal;
+    display: flex;
+    gap: 1px;
+    flex-direction: column ;
+    justify-content: space-between;
+    justify-items: center;
+
+
+}
+
+.hero-bottom h2{
+   font-size: 3rem;
+   flex: 1 1rem;
+   
+}
+
+.hero-bottom h1{
+    font-size: 5rem;
+    top: -100px;
+    position: relative;
+    
+}
+
+.hero-bottom h3{
+    font-size: 2rem;
+    top: -150px;
+    position: relative;
+    
+    
+}
+
+/* end hero section */
+
+/* start first content */
+
+.content-first{
+  display: flex;
+  flex-direction: row 1fr 1fr;
+  justify-content: space-evenly;
+  justify-items: center;
+  gap: 3rem;
+  padding: 6rem 6rem 6rem 6rem;
+    
+}
+.content-first img{
+    height: 33rem;
+    width: 33rem;
+}
+
+
+.btn-card1::before{
+    content: url(/svg/book_dark.svg);
+    position: relative;
+    top: 1rem;
+    left: -0.2rem;
+    transform: translateY(-47%);
+    
+}
+
+.btn-card1{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    gap: 2px;
+    width: 170px;
+    height: 60px;
+    left: 10rem;
+    top:-10rem;
+}
+
+/* content first end */
+
+/* second content start */
+
+.content-second{
+    display: flex;
+    flex-direction: row 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 3rem;
+    padding: 6rem 6rem 6rem 6rem;
+}
+
+.btn-card2{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 2px;
+    width: 170px;
+    height: 60px;
+    left: 10rem;
+    top:-10rem;
+}
+
+.btn-card2::before{
+    content: url(/svg/cart_dark.svg);
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    transform: translateY(-47%);
+    
+}
+
+.second-left img{
+    height: 33rem;
+    width: 33rem;
+}
+
+/* end second content */
+
+/* footer starts */
+
+.footer{
+    background:  #E4B50D 100%;
+    align-items: center;
+    display: flex;
+    color: #000000;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    grid-row: auto;
+    margin: 0px;
+    
+}
+
+.social{
+    display: list-item;
+    list-style: none;
+    color: #000000;
+    
+}
+
+.social a .facebook::before{
+    position: relative;
+    content: url(svg/facebook.svg);
+    top: 4PX;;
+   
+}
+
+.social a  .instagram::before{
+    position: relative;
+    content: url(svg/instagram.svg);
+    top: 4PX;
+  
+}
+
+.tele{
+    display: list-item;
+    list-style: none;
+}
+
+.telephone{
+    position: relative;
+    top: -26px;
+}
+
+.telephone a  .call::before{
+    position: relative;
+    content: url(svg/call.svg);
+    top: 4PX;
+  }
+
+
+
+
+/* footer ends */
+
+
+
+/* Mobile version for header */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    margin-bottom: 1rem;
+}
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: var(--yellow-color);
+    margin-bottom: 5px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 3rem; /* Adjust as needed */
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu li a {
+    color: var(--black-color);
+}
+
+/* End of mobile version for header */
+
+/* Rest of your CSS styles remain unchanged below */
+
+
+
+
+
